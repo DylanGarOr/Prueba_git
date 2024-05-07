@@ -6,4 +6,8 @@ public class Estudiante extends Persona{
         super (Nombre, Edad, FechaDeNacimiento);
         this.Grado = Grado;
     }
+    @Override
+    public String toString(){
+        return "Nombre: " + obtenerNombre() + " Edad: " + obtenerEdad() + " Fecha de nacimiento: " + obtenerFechaDeNacimiento() + " Grado: " + Grado;
+    }
 }
