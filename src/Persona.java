@@ -18,10 +18,17 @@ public class Persona {
     public Integer obtenerEdad(){
         return Edad;
     }
+    public void establecerEdad(Integer Edad){
+        if (Edad >= 18){
+            this.Edad = Edad;
+        }else{
+            System.out.println("Usted no es mayor de Edad");
+        }
+    }
     public String obtenerFechaDeNacimiento(){
         return FechaDeNacimiento;
     }
     public  void establecerFechaDeNacimiento(String FechaDeNacimiento){
-        this.FechaDeNacimiento = FechaDeNacimiento
+        this.FechaDeNacimiento = FechaDeNacimiento;
     }
 }
