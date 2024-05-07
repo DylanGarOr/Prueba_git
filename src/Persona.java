@@ -31,4 +31,10 @@ public class Persona {
     public  void establecerFechaDeNacimiento(String FechaDeNacimiento){
         this.FechaDeNacimiento = FechaDeNacimiento;
     }
+
+    public void calculoFechaDeNacimiento(){
+        this.Edad = Edad;
+        Integer calculo = 2024 - edad;
+        System.out.println("Su fecha de nacimiento es: " + calculo);
+    }
 }
