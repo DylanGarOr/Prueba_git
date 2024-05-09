@@ -2,7 +2,7 @@ public class Empleado extends Persona implements Trabajador{
     private String Cargo;
     private String Salario;
 
-    public  Empleado(String Nombre, String FechaDeNacimiento, Integer Edad){
+    public  Empleado(String Nombre, String FechaDeNacimiento, Integer Edad, String Cargo, String Salario){
         super(Nombre,Edad, FechaDeNacimiento);
         this.Cargo = Cargo;
         this.Salario = Salario;
