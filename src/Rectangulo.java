@@ -8,5 +8,13 @@ public class Rectangulo extends FiguraGeometrica {
         this.Ancho = Ancho;
         this.Longitud = Longitud;
     }
+
+    public double calcularArea() {
+        return Ancho * Longitud;
+    }
+
+    public double calcularPerimetro() {
+        return 2 * (Ancho + Longitud);
+    }
 }
 
