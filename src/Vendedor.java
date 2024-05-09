@@ -7,4 +7,7 @@ public class Vendedor extends Empleado{
         this.Comision = Comision;
         this.Ventas = Ventas;
     }
+    public double calcularSalario(){
+        return Double.parseDouble(getSalario()) +  (Comision * Ventas);
+    }
 }
