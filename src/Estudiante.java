@@ -13,6 +13,6 @@ public class Estudiante extends Persona implements Trabajador{
 
     @Override
     public void realizarTarea(){
-        System.out.println("realizando tarea escolar de grado");
+        System.out.println("realizando tarea escolar de grado " + Grado);
     }
 }
