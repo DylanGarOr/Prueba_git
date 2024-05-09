@@ -1,4 +1,4 @@
-public class Estudiante extends Persona{
+public class Estudiante extends Persona implements Trabajador{
 
     private  String Grado;
 
@@ -9,5 +9,10 @@ public class Estudiante extends Persona{
     @Override
     public String toString(){
         return "Nombre: " + obtenerNombre() + " Edad: " + obtenerEdad() + " Fecha de nacimiento: " + obtenerFechaDeNacimiento() + " Grado: " + Grado;
+    }
+
+    @Override
+    public void realizarTarea(){
+        System.out.println("realizando tarea escolar de grado");
     }
 }
