@@ -5,4 +5,9 @@ public class Gerente extends Empleado{
         super(Nombre, FechaDeNacimiento, Edad, Cargo, Salario);
         this.Bono = Bono;
     }
+
+    @Override
+    public double calcularSalario(){
+        return Double.parseDouble(getSalario()) +  Bono;
+    }
 }

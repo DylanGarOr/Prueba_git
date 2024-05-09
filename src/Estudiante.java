@@ -15,4 +15,9 @@ public class Estudiante extends Persona implements Trabajador{
     public void realizarTarea(){
         System.out.println("realizando tarea escolar de grado " + Grado);
     }
+
+    @Override
+    public double calcularSalario(){
+        return 0.0;
+    }
 }
